@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5699e49603ae70553f87a583af837fa4",
+    "content-hash": "d96e521015a5f78fd770466f6d4db750",
     "packages": [
         {
             "name": "friendsofsymfony/user-bundle",

@@ -13,3 +13,22 @@ framework:
     #fragments: ~
     php_errors:
         log: true
+
+
+
+# FOS User Bundle
+fos_user:
+    db_driver: orm   # Le type de BDD à utiliser , nous utilisons l'ORM Doctrine
+    firewall_name: main   # Le nom de firewall derriere lequel on utilisera ces utilisateurs
+    # Permet de renseigner la nouvelle entity utilisateur
+    user_class: RTech\UserBundle\Entity\User     # La classe de l'entité User que nous utilisons
+    service:
+            mailer: fos_user.mailer.twig_swift
+
+    registration:
+        form:
+            type: RTech\UserBundle\Form\Type\RegistrationFormType
+    profile:
+        form:
+            type: RTech\UserBundle\Form\Type\ProfileFormType
+
