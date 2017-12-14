@@ -1,13 +1,13 @@
 framework:
     secret: '%env(APP_SECRET)%'
-    #default_locale: en
+    default_locale: fr
     #csrf_protection: ~
     #http_method_override: true
 
     # uncomment this entire section to enable sessions
-    #session:
+    session:
     #    # With this config, PHP's native session handling is used
-    #    handler_id: ~
+        handler_id: ~
 
     #esi: ~
     #fragments: ~
@@ -15,29 +15,3 @@ framework:
         log: true
 
 
-
-## FOS User Bundle
-#fos_user:
-#    db_driver: orm   # Le type de BDD à utiliser , nous utilisons l'ORM Doctrine
-#    firewall_name: main   # Le nom de firewall derriere lequel on utilisera ces utilisateurs
-#    # Permet de renseigner la nouvelle entity utilisateur
-#    user_class: RTech\UserBundle\Entity\User     # La classe de l'entité User que nous utilisons
-#    service:
-#            mailer: fos_user.mailer.twig_swift
-#
-#    registration:
-#        form:
-#            type: RTech\UserBundle\Form\Type\RegistrationFormType
-#    profile:
-#        form:
-#            type: RTech\UserBundle\Form\Type\ProfileFormType
-
-# FOS User Bundle
-fos_user:
-    db_driver: orm   # Le type de BDD à utiliser , nous utilisons l'ORM Doctrine
-    firewall_name: main  # Le nom de firewall derriere lequel on utilisera ces utilisateurs
-    # Permet de renseigner la nouvelle entity utilisateur
-    user_class: AppBundle\Entity\User # La classe de l'entité User que nous utilisons
-    from_email:
-        address: noreply@example.com
-        sender_name: Demo App
